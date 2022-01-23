@@ -94,7 +94,7 @@ export class DashboardComponent implements OnInit {
     const el = document.getElementById('donut_chart');
     const chart = new google.visualization.PieChart(el);
     const opcoes = this.obterOpcoes();
-    opcoes['peiHole'] = 0.4;
+    opcoes['peiHole'] = 0.2;
     chart.draw(this.obterDataTable(), opcoes);
   }
 
